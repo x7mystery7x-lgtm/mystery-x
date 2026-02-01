@@ -4,7 +4,7 @@ import Layout from './components/common/Layout'
 import { ProtectedRoute } from './components/common/ProtectedRoute'
 
 // Lazy load components
-const Home = React.lazy(() => import('./pages/Public/TempHome'))
+const Home = React.lazy(() => import('./pages/Public/Home'))
 const About = React.lazy(() => import('./pages/Public/About'))
 const Services = React.lazy(() => import('./pages/Public/Services'))
 const Contact = React.lazy(() => import('./pages/Public/Contact'))
