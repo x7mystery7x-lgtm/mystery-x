@@ -1,0 +1,65 @@
+/* Dashboard styles */
+:root{
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #16a34a; /* green */
+  --danger: #dc2626;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.dashboard-root{
+  max-width:1100px;
+  margin:32px auto;
+  padding:20px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#0f172a;
+}
+
+.dashboard-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.dashboard-title{font-size:28px;margin:0 0 4px 0;font-weight:700}
+.dashboard-sub{color:var(--muted);margin:0}
+
+.dashboard-actions{display:flex;gap:8px}
+.btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(22,163,74,0.12)}
+.btn.small{padding:6px 10px;font-size:14px}
+
+.dashboard-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.card{background:var(--card);padding:16px;border-radius:10px;box-shadow:var(--shadow);}
+.card-title{font-size:13px;color:var(--muted);margin-bottom:6px}
+.card-value{font-size:20px;font-weight:700}
+.card-value.due{color:var(--danger)}
+.card-meta{color:var(--muted);margin-top:8px;font-size:13px}
+
+.dashboard-main{display:grid;grid-template-columns:2fr 1.4fr;gap:16px}
+.panel{background:var(--card);padding:16px;border-radius:10px;box-shadow:var(--shadow)}
+.panel-title{margin:0 0 12px 0;font-weight:700}
+
+.mini-chart{display:flex;align-items:end;gap:8px;height:120px}
+.mini-chart .bar{width:18%;background:linear-gradient(180deg,#34d399,#059669);border-radius:6px}
+
+.payments-list{list-style:none;padding:0;margin:0}
+.payment-row{display:grid;grid-template-columns:1fr 1fr 1fr 80px;gap:8px;padding:10px 0;border-bottom:1px solid #f1f5f9;align-items:center}
+.payment-id{font-weight:600}
+.payment-date{color:var(--muted)}
+.payment-amount{font-weight:600;text-align:right}
+.payment-status{padding:6px 8px;border-radius:8px;text-align:center;font-weight:600}
+.payment-status.paid{background:rgba(34,197,94,0.12);color:var(--accent)}
+.payment-status.due{background:rgba(220,38,38,0.08);color:var(--danger)}
+
+.panel-foot{margin-top:12px;text-align:right}
+.link{color:#0ea5a0;text-decoration:none;font-weight:600}
+
+@media (max-width:900px){
+  .dashboard-cards{grid-template-columns:repeat(1,1fr)}
+  .dashboard-main{grid-template-columns:1fr}
+  .mini-chart{height:80px}
+}
