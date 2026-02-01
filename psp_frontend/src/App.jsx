@@ -1,31 +1,31 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Layout from './components/common/Layout'
-import { ProtectedRoute } from './components/common/ProtectedRoute'
+import Layout from './components/common/Layout.jsx'
+import { ProtectedRoute } from './components/common/ProtectedRoute.jsx'
 
 // Lazy load components
-const Home = React.lazy(() => import('./pages/Public/Home'))
-const About = React.lazy(() => import('./pages/Public/About'))
-const Services = React.lazy(() => import('./pages/Public/Services'))
-const Contact = React.lazy(() => import('./pages/Public/Contact'))
-const Payments = React.lazy(() => import('./pages/Public/Payments'))
-const Dashboard = React.lazy(() => import('./pages/Public/Dashboard'))
-const Help = React.lazy(() => import('./pages/Public/Help'))
-const Compliance = React.lazy(() => import('./pages/Public/Compliance'))
-const Docs = React.lazy(() => import('./pages/Public/Docs'))
-const ClientDashboard = React.lazy(() => import('./pages/Client/Dashboard'))
-const ClientMessages = React.lazy(() => import('./pages/Client/Messages'))
-const ClientPayments = React.lazy(() => import('./pages/Client/Payments'))
-const ClientProfile = React.lazy(() => import('./pages/Client/Profile'))
-const AdminDashboard = React.lazy(() => import('./pages/Admin/Dashboard'))
-const AdminMessages = React.lazy(() => import('./pages/Admin/AdminMessages'))
-const AdminPayments = React.lazy(() => import('./pages/Admin/AdminPayments'))
-const AdminClients = React.lazy(() => import('./pages/Admin/Clients'))
-const RoleSelection = React.lazy(() => import('./pages/Auth/RoleSelection'))
-const Login = React.lazy(() => import('./pages/Auth/Login'))
-const Register = React.lazy(() => import('./pages/Auth/Register'))
-const RegisterAdmin = React.lazy(() => import('./pages/Auth/RegisterAdmin'))
-const RegisterClient = React.lazy(() => import('./pages/Auth/RegisterClient'))
+const Home = React.lazy(() => import('./pages/Public/Home.jsx'))
+const About = React.lazy(() => import('./pages/Public/About.jsx'))
+const Services = React.lazy(() => import('./pages/Public/Services.jsx'))
+const Contact = React.lazy(() => import('./pages/Public/Contact.jsx'))
+const Payments = React.lazy(() => import('./pages/Public/Payments.jsx'))
+const Dashboard = React.lazy(() => import('./pages/Public/Dashboard.jsx'))
+const Help = React.lazy(() => import('./pages/Public/Help.jsx'))
+const Compliance = React.lazy(() => import('./pages/Public/Compliance.jsx'))
+const Docs = React.lazy(() => import('./pages/Public/Docs.jsx'))
+const ClientDashboard = React.lazy(() => import('./pages/Client/Dashboard.jsx'))
+const ClientMessages = React.lazy(() => import('./pages/Client/Messages.jsx'))
+const ClientPayments = React.lazy(() => import('./pages/Client/Payments.jsx'))
+const ClientProfile = React.lazy(() => import('./pages/Client/Profile.jsx'))
+const AdminDashboard = React.lazy(() => import('./pages/Admin/Dashboard.jsx'))
+const AdminMessages = React.lazy(() => import('./pages/Admin/AdminMessages.jsx'))
+const AdminPayments = React.lazy(() => import('./pages/Admin/AdminPayments.jsx'))
+const AdminClients = React.lazy(() => import('./pages/Admin/Clients.jsx'))
+const RoleSelection = React.lazy(() => import('./pages/Auth/RoleSelection.jsx'))
+const Login = React.lazy(() => import('./pages/Auth/Login.jsx'))
+const Register = React.lazy(() => import('./pages/Auth/Register.jsx'))
+const RegisterAdmin = React.lazy(() => import('./pages/Auth/RegisterAdmin.jsx'))
+const RegisterClient = React.lazy(() => import('./pages/Auth/RegisterClient.jsx'))
 
 function App() {
   return (
