@@ -37,7 +37,7 @@ app.use(cookieParser());
 const FRONTEND_ORIGIN = process.env.FRONTEND_URL || 'http://localhost:5175';
 app.use(
   cors({
-    origin: FRONTEND_ORIGIN,
+    origin: mystery-x.netlify.app,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
